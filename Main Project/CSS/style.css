@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Font size*/
+    font-size: 20px;
+    /* More space between lines*/
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    /*make the width 80% of the available width*/
+    width: 80%;
+    /*takes the leftover 20% and it divides it equally on the left and right side*/
+    margin: auto;
+    /*if anything goes outside of the container there won't be any scroll bars*/
+    overflow: hidden;
+}
+
+#mainHeader {
+    background: #333;
+    color: white;
+}
+
+#mainNav {
+    background-color: #ccc;
+    color: black;
+}
+
+#mainNav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mainNav li {
+    display: inline;
+    padding: 5px 10px;
+}
+
+#mainNav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#mainNav li:hover {
+    background: #aaa;
+}
+
+#jumbo {
+    background-image: url("https://placebear.com/640/360");
+    /*this two value is for the x and y positions*/
+    background-position: center center;
+    min-height: 200px;
+    text-align: center;
+}
+
+#jumbo h1 {
+    color: white;
+    font-size: 40px;
+    padding-top: 20px;
+    line-height: 1.6em;
+}
+
+#mainFooter {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+p {
+    border-top: 5px solid black;
+    border-right: 2px dotted green;
+    border-bottom: 5px solid black;
+    border-left: 2px dotted green;
+    /* Apply border at once*/
+    /*CSS is red from top to bottom. The last value which is there, will be on the screen*/
+    border: 3px solid green;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    /*Values are clockwise. So top right bottom left*/
+    padding: 10px 20px 10px 20px;
+    /*A shortcut is. First value is top and bottom, second value is left and right */
+    padding: 10px 20px;
+    /*To apply one value in all direction*/
+    padding: 20px;
+    margin-top: 40px;
+    margin: 40px;
+}
